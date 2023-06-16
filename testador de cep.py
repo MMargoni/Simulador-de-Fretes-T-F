@@ -17,8 +17,8 @@ ceps = pd.read_excel(r'D:\DADOS (1).xlsx', sheet_name='DADOS1')
 ceps = ceps['CEPS'].tolist()
 
 chrome_options = Options()
-chrome_options.add_argument('--headless')  # Run Chrome in headless mode
-chrome_options.add_argument('--disable-gpu')  # Disable GPU acceleration (may be required in some cases)
+chrome_options.add_argument('--headless')  
+chrome_options.add_argument('--disable-gpu')  
 
 driver = webdriver.Chrome(options=chrome_options)    
 driver.get('https://www.tf.com.br/top-basico-brilho--uva/p')
